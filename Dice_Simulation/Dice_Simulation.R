@@ -38,3 +38,20 @@ hist(sum_dice)
 # cummulative distribution plot.
 
 plot.ecdf(sum_dice, main="cummulative distribution")
+
+
+# normal distribution
+
+n <- rnorm(1000, mean = 3, sd=10)
+
+hist(n, main = "Normal Distribution")
+
+# Z score
+
+myheight <- 68.5
+mean_height <- 70
+sd_height <- 5
+
+z <- (myheight-mean_height)/sd_height
+
+z
