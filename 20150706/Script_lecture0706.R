@@ -1,4 +1,4 @@
-#ï‚§ In R, roll two dice and sum their scores
+#?‚§ In R, roll two dice and sum their scores
 
 dice1 <- sample(1:6, replace = T)
 dice2 <- sample(1:6, replace = T)
@@ -6,7 +6,7 @@ dice2 <- sample(1:6, replace = T)
 sum_dice <- dice1 + dice2
 
 
-#ï‚§ Plot your results for 10 experiments, 100 experiments and 10000 experiments
+#?‚§ Plot your results for 10 experiments, 100 experiments and 10000 experiments
 
 # rolling dice for 10 experiments
 d <- 10
@@ -52,6 +52,6 @@ myheight <- 68.5
 mean_height <- 70
 sd_height <- 5
 
-z <- (myheight-mean_height)/sd_height
+z <- (myheight-mean_height)/sqrt(sd_height)
 
 z
