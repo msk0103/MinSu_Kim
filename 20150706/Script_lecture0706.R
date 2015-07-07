@@ -1,4 +1,4 @@
-#?‚§ In R, roll two dice and sum their scores
+# In R, roll two dice and sum their scores
 
 dice1 <- sample(1:6, replace = T)
 dice2 <- sample(1:6, replace = T)
@@ -6,7 +6,7 @@ dice2 <- sample(1:6, replace = T)
 sum_dice <- dice1 + dice2
 
 
-#?‚§ Plot your results for 10 experiments, 100 experiments and 10000 experiments
+#Plot your results for 10 experiments, 100 experiments and 10000 experiments
 
 # rolling dice for 10 experiments
 d <- 10
