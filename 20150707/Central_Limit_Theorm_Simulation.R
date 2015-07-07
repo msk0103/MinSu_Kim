@@ -7,9 +7,12 @@ for(i in 1:10000){
 }
 hist(dice_mean, freq = F)
 
+
 ### Central Limit Theorm Simulation
 
 # uniform distribution
+# instructor's code
+
 hist(runif(10000)*10,main="")
 means <- numeric(10000)
 for (i in 1:10000){
@@ -20,4 +23,4 @@ mean(means)
 sd(means)
 xv <- seq(0,10,0.1)
 yv <- dnorm(xv, mean=mean(means),sd=sd(means))
-line(xv, yv)
+lines(xv, yv)
