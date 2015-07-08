@@ -58,7 +58,6 @@ t.test(Male, Female, alternative = "less", var.equal = T)
 # False, the selected hypothesis is correct.
 ##3-(e)
 # true
-
 ###4.
 PersonA <- c(248,236,269,254,249,251,260,245,239,255)
 PersonB <- c(380,391,377,392,398,374) * (2/3)
@@ -74,7 +73,13 @@ wilcox.test(PersonA, PersonB)
 
 ###5.
 # Standard error of mean is standard deviation of estimated the sample-mean.
-# Standard deviation is differ from SE because standard deviation is only for a sample group.
+# Standard deviation is differ from SE because standard deviation is only for a single set of sample group.
 # So handling the larger samples(standard error of means) gets closer to the mean of population.
 
-
+# Standard error of mean is calculating the percentage of estimating error rate of the mean.
+# standard deviation is estimating the population's mean by estimating the sample's mean.
+dice <- sample(1:6, 100, replace = T)
+se(dice)
+# 0,1598579
+sd(dice)
+#1.598579
